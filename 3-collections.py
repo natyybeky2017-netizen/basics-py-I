@@ -15,17 +15,22 @@ Crea una variable "mascotas" que almacene una lista con los siguientes elementos
 Imprime por consola el valor almacenado
 Despues haz los pasos pedidos
 """
-# Escribe tu código aquí
+mascotas:["perro","gato","loro"]
 
-# Escribe el código para saber la cantidad de elementos que tiene la lista, imprimir por consola
+print(mascotas)
 
-# Escribe el código para acceder al valor de la posición 2, imprimir por consola
+print(len(mascotas))
 
-# Escribe el código para agregar una elemento a la lista, imprimir por consola la lista
+print(mascotas[2])
 
-# Escribe el código para modificar un elemento de la lista, imprimir por consola la lista
+mascotas.append ("tortuga")
+print("mascotas")
 
-# Escribe el código para eliminar un elemento de la lista, imprimir por consola la lista
+mascotas[1] = "conejo"
+print(mascotas)
+
+mascotas.remove("perro")
+print(mascotas)
 
 
 """
@@ -41,16 +46,17 @@ Crea una variable "plantas" que almacene una tupla con los siguientes elementos:
 Imprime por consola el valor almacenado
 Despues haz los pasos pedidos
 """
-# Escribe tu código aquí
 
-# Escribe el código para saber la cantidad de elementos que tiene la tupla, imprimir por consola
+plantas:( "cactus","orquidea","rosas")
+print(plantas)
 
-# Escribe el código para acceder al valor de la posición 2, imprimir por consola
+print(len(plantas))
 
-# Intentar modificar una tupla
-# plantas[1] = 'hoja rota'  # Descomenta esta línea para ver qué sucede
+print(plantas[2])
 
-# Escribe tu análisís acá acerca de qué sucede
+plantas[1] = 'hoja rota'
+
+""" Al intentar cambiar un elemento, Python muestra un error."""
 
 
 """
@@ -65,18 +71,23 @@ Puedes añadir y eliminar elementos, pero no puedes modificar los elementos exis
 Crea una variable "nombres" que almacene un set con los siguientes elementos: 'María', 'Cris', 'Cris', 'Alex'
 Imprime por la terminal dicha variable
 Haz los pasos pedidos
+
 """
-# Escribe el código aqui
+nombres = {"María", "Cris", "Cris", "Alex"}
 
-# Explica qué sucede cuándo imprimes el valor que almacena "nombres"
+print(nombres)
 
-# Escribe el código para saber la cantidad de elementos que tiene el set, imprimir por consola
+""" El set elimina los elementos repetidos,Por 'Cris' aparece solo una vez."""
 
-# Escribe el código para acceder al valor de la posición 3, imprimir por consola
+print(len(nombres))
 
-# Escribe el código para agregar una elemento al set, imprimir por consola el set
+""" No se puede acceder a un elemento por posición porque los sets no tienen índices."""
 
-# Escribe el código para eliminar un elemento del set, imprimir por consola el set
+nombres.add("Laura")
+print(nombres)
+
+nombres.remove("Alex")
+print(nombres)
 
 """
  --- DICCIONARIOS ---
@@ -90,10 +101,26 @@ Puedes añadir, modificar y eliminar pares clave-valor.
 Crea un diccionario llamado "ciudad" con las claves 'nombre' y 'pais' y los valores 'Barcelona' y 'España' respectivamente.
 Imprime el diccionario 
 """
-# Escribe el código aqui para acceder y ver por consola el valor de 'nombre'
 
-# Escribe el código aqui para añadir un nuevo par clave-valor y ver por consola el valor de 'ciudad'
+ciudad = {
 
-# Escribe el código aqui para modificar el valor de un par clave-valor de 'ciudad' y verlo por consola
+    "nombre":"Barcelona"
+    "País":"España"
 
-# Escribe el código aqui para eliminar un par clave-valor de 'ciudad' y verlo por consola
+}
+print ("ciudad")
+
+print (ciudad["nombre"])
+
+
+ciudad["continente"] = "Europa"
+
+print(ciudad)
+
+ciudad["nombre"] = "Madrid"
+
+print(ciudad)
+
+del ciudad["continente"]
+
+print(ciudad)
